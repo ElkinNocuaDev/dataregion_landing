@@ -1677,3 +1677,45 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Logo en el header (sustituye al h1 anterior) */
+#fh5co-header .logo {
+  float: left;
+  margin: 24px 0 0 0;  /* mismo margen que tenía el h1 */
+  padding: 0;
+  line-height: 0;
+}
+
+/* La imagen del logo */
+#fh5co-header .logo img {
+  display: block;
+}
+
+/* Ajuste general de la sección con imagen para que NO se superponga */
+.fh5co-section-with-image {
+    position: relative;
+    padding-top: 220px !important;   /* aumenta el espacio superior */
+    padding-bottom: 180px !important;
+    margin-top: 120px !important;    /* agrega separación desde la sección previa */
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Ajuste de la tarjeta */
+.fh5co-section-with-image .fh5co-box {
+    background: rgba(255, 255, 255, 0.92); /* un poco más opaco para mejor lectura */
+    padding: 40px 50px;
+    max-width: 720px;
+    margin: 0 auto;                 /* centrado horizontal */
+    position: relative;
+    top: -40px;                     /* la baja/ajusta sin superponer */
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Opcional: suaviza el fade */
+.fh5co-section-with-image .overlay {
+    background: rgba(0, 0, 0, 0.15);
+}
+
